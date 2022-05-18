@@ -34,8 +34,7 @@ Add the following to your project in the build section.  **showDetails** will sh
 ```
 
 ### As a Report
-Add the following to your project in the reports section.
-Not supported as of Version 0.2.0 due to CVE-2020-13936
+Add the following to your project in the reports section (not supported as of Version 0.2.0 due to CVE-2020-13936):
 ```xml
 <reporting>
     <plugins>
