@@ -34,6 +34,8 @@ public class GraphDataGenerator {
 
     public String generateBubbleChartData(List<RankedDisharmony> rankedDisharmonies) {
 
+        long time = new Date().getTime();
+        
         StringBuilder chartData = new StringBuilder();
         chartData.append("[ 'ID', 'Effort', 'Change Proneness', 'Priority', 'Method Count'], ");
 
