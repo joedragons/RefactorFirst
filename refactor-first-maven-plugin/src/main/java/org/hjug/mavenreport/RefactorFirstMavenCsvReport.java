@@ -64,6 +64,7 @@ public class RefactorFirstMavenCsvReport extends AbstractMojo {
     public void execute() {
         StringBuilder fileNameSB = new StringBuilder();
         String publishedDate = createFileDateTimeFormatter().format(Instant.now());
+        long time = new Date().getTime();
 
         fileNameSB
                 .append(getOutputNamePrefix())
