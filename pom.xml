@@ -64,9 +64,7 @@
         <spotbugs.maven.plugin.version>4.0.0</spotbugs.maven.plugin.version>
         <spotbugs.version>4.0.3</spotbugs.version>
         <findsecbugs.plugin.version>1.10.1</findsecbugs.plugin.version>
-
-
-
+        
         <sonar.projectKey>jimbethancourt_RefactorFirst</sonar.projectKey>
         <sonar.moduleKey>${project.artifactId}</sonar.moduleKey>
         <sonar.organization>jimbethancourt-github</sonar.organization>
