@@ -4,7 +4,7 @@ This tool for Java codebases will help you identify the God Classes you should r
 The graph generated in the report will look similar to this one:
 ![image info](./RefactorFirst_Sample_Report.png)
 
-## There are several ways to run the analysis on your codebase:
+## There are several ways to run the analysis on your codebase
 
 ### From The Command Line
 Run the following command from the root of your project (the source code does not need to be built):
