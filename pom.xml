@@ -41,8 +41,8 @@
         <connection>scm:git:https://github.com/jimbethancourt/RefactorFirst</connection>
         <developerConnection>scm:git:https://github.com/jimbethancourt/RefactorFirst</developerConnection>
         <url>https://github.com/jimbethancourt/RefactorFirst</url>
-      <tag>HEAD</tag>
-  </scm>
+        <tag>HEAD</tag>
+    </scm>
 
     <issueManagement>
         <system>GitHub</system>
