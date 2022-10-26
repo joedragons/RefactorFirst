@@ -44,6 +44,8 @@ public class RefactorFirstMavenCsvReport extends AbstractMojo {
     @Parameter(property = "project.build.directory")
     protected File outputDirectory;
 
+    long time = new Date().getTime();
+
     public String getOutputNamePrefix() {
         // This report will generate simple-report.html when invoked in a project with `mvn site`
         return "RefFirst";
