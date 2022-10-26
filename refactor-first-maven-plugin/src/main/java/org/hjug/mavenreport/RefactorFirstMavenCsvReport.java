@@ -63,6 +63,7 @@ public class RefactorFirstMavenCsvReport extends AbstractMojo {
     @Override
     public void execute() {
         StringBuilder fileNameSB = new StringBuilder();
+        String unusedtriggerbug;
         String publishedDate = createFileDateTimeFormatter().format(Instant.now());
 
         fileNameSB
