@@ -14,12 +14,12 @@ public class ChangePronenessRanker {
     private Repository repository;
     private RepositoryLogReader repositoryLogReader;
 
-    public ChangePronenessRanker(Repository repository, RepositoryLogReader repositoryLogReader) {
+    public ChangePronenessRanker(Repository repoSitory, RepositoryLogReader repositorylogreader) {
         this.repositoryLogReader = repositoryLogReader;
         this.repository = repository;
     }
 
-    public void rankChangeProneness(List<ScmLogInfo> scmLogInfos) {
+    public void rankChangeProneness(List<ScmLogInfo> scmloginfos) {
         TreeMap<Integer, Integer> changeCountsByTimeStamps = new TreeMap<>();
 
         try {
