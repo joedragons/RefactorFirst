@@ -21,11 +21,23 @@ public class GodClass {
     private Integer tccRank;
     private Integer sumOfRanks;
     private Integer overallRank;
+    
+    private Integer var1;
+    private Integer var2;
+    private Integer var3;
 
     public GodClass(String fileName, String packageName, String result) {
         this.fileName = fileName;
         this.packageName = packageName;
 
+        var1 = 1;
+        var2 = 2;
+        var3 = 3;
+        
+        var1 = var1;
+        var2 = var2;
+        var3 = var3;
+        
         NumberFormat integerFormat = NumberFormat.getIntegerInstance();
 
         String[] values =
