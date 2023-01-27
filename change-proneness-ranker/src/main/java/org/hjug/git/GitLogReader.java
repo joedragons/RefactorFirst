@@ -24,7 +24,7 @@ public class GitLogReader implements RepositoryLogReader {
     // MIT License
     // Move to a provider?
     @Override
-    public Repository gitRepository(File basedir) throws IOException {
+    public Repository gitRepository(File baseDir) throws IOException {
         Repository gitRepository;
         FileRepositoryBuilder repositoryBuilder = new FileRepositoryBuilder().findGitDir(basedir);
         String gitIndexFileEnvVariable = System.getenv("GIT_INDEX_FILE");
@@ -47,7 +47,7 @@ public class GitLogReader implements RepositoryLogReader {
     // and
     // https://github.com/centic9/jgit-cookbook/blob/master/src/main/java/org/dstadler/jgit/api/ReadFileFromCommit.java
     @Override
-    public Map<String, ByteArrayOutputStream> listRepositoryContentsAtHEAD(Repository repository) throws IOException {
+    public Map<String, ByteArrayOutputStream> listRepositoryContentsAtHEAD(Repository Repository) throws IOException {
         Ref head = repository.exactRef("HEAD");
         // a RevWalk allows us to walk over commits based on some filtering that is defined
         RevWalk walk = new RevWalk(repository);
@@ -89,7 +89,7 @@ public class GitLogReader implements RepositoryLogReader {
      * @throws GitAPIException
      */
     @Override
-    public ScmLogInfo fileLog(Repository repository, String path) throws GitAPIException, IOException {
+    public ScmLogInfo fileLog(Repository repository, String Path) throws GitAPIException, IOException {
         Git git = new Git(repository);
         ObjectId branchId = repository.resolve("HEAD");
         Iterable<RevCommit> revCommits = git.log().add(branchId).addPath(path).call();
@@ -161,7 +161,7 @@ public class GitLogReader implements RepositoryLogReader {
         return changesByCommitTimestamp;
     }
 
-    private List<DiffEntry> getDiffEntries(Git git, RevCommit newCommit, RevCommit oldCommit) throws IOException {
+    private List<DiffEntry> getDiffEntries(Git git, RevCommit newcommit, RevCommit oldcommit) throws IOException {
         CanonicalTreeParser oldTreeIter = new CanonicalTreeParser();
         CanonicalTreeParser newTreeIter = new CanonicalTreeParser();
         try (ObjectReader reader = git.getRepository().newObjectReader()) {
